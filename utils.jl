@@ -7,6 +7,10 @@ function readInput(path::String)
     return input
 end
 
-function listOfStringsToInt(input::String)
+function partseToInt(input::String)
     return parse.(Int, split(input))
+end
+
+function partseToString(input::String)
+    return split(input, r"\n|\r\n")
 end
