@@ -2,20 +2,13 @@
 include("../../utils.jl")
 
 input = partseToString(readInput("input.txt"))
-print(length(input))
-common = Dict( i => 0 for i in 1:length(input[1]))
-for number in input
-    for (index, single) in enumerate(number)
-        if single == '1'
-            global common[index] += 1
-        end
-    end
-end
-print(common)
+
+input = partseToString(readInput("input.txt"))
+report = hcat([[parse(Int, x) for x in bitRow] for bitRow in input]...)
 
 gamma, epsilon = "", ""
 for i in 1:length(input[1])
-    if common[i] > (length(input)/2)
+    if sum(report[i,:]) > (length(input)/2)
         global gamma *= '1'
         global epsilon *= '0'
     else 
@@ -26,5 +19,8 @@ end
 
 print("The answer to part 1 is: ", parse(Int, gamma; base=2) * parse(Int, epsilon; base=2))
 
+# oxygenGeneratorOxy, oxygenGeneratorCo2 = "", ""
+# maxLenOxy, maxLenCo2 = 0, 0
 
-# print("\nThe answer to part 2 is: ", hor * depth)
+
+# print("\nThe answer to part 2 is: ", parse(Int, oxygenGeneratorCo2; base=2) * parse(Int, oxygenGeneratorOxy; base=2))
