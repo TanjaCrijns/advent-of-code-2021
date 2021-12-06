@@ -71,6 +71,6 @@ Your puzzle answer was ```1609314870967```.
 
 <details>
   <summary>Comments about solution</summary>
-  Started off with a slow solution, got some inspiration from a puzzle from last year and reimplemented it with a count dictionary. There is no defaultdict in julia so I want to rewrite it still with that. 
+  Started off with a slow solution, got some inspiration from a puzzle from last year and reimplemented it with a count dictionary. <strike>There is no defaultdict in julia so I want to rewrite it still with that.</strike> No need for default dictionary, I initialized it with zeros and that worked like a charm.
   <br/>
 </details>

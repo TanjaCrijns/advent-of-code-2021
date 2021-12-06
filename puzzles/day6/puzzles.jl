@@ -3,28 +3,15 @@ include("../../utils.jl")
 
 function fishReproduce(fishCounts, days)
     for _ in 1:days
-        newCounts = Dict()
+        newCounts = Dict(x => 0 for x in 0:8)
         for (key, value) in fishCounts
             key -= 1
 
             if key < 0
-                if 6 in keys(newCounts)
-                    newCounts[6] += value
-                else
-                    newCounts[6] = value
-                end
-                
-                if 8 in keys(newCounts)
-                    newCounts[8] += value
-                else
-                    newCounts[8] = value
-                end
+                newCounts[6] += value
+                newCounts[8] += value
             else
-                if key in keys(newCounts)
-                    newCounts[key] += value
-                else
-                    newCounts[key] = value
-                end
+                newCounts[key] += value
             end
         fishCounts = newCounts
         end
@@ -34,13 +21,9 @@ end
 
 
 input = partseToInt(readInput("input.txt"), r",")
-fishCounts = Dict()
+fishCounts = Dict(x => 0 for x in 0:8)
 for fish in input
-    if fish in keys(fishCounts)
-        fishCounts[fish] += 1
-    else
-        fishCounts[fish] = 1
-    end
+    fishCounts[fish] += 1
 end
 
 print("The answer to part 1 is: ", fishReproduce(fishCounts, 80))
