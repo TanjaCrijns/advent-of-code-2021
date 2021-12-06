@@ -7,8 +7,8 @@ function readInput(path::String)
     return input
 end
 
-function partseToInt(input::String)
-    return parse.(Int, split(input))
+function partseToInt(input::String, delim::Regex)
+    return parse.(Int, split(input, delim))
 end
 
 function partseToString(input::String)

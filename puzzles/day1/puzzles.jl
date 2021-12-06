@@ -1,7 +1,7 @@
 #!/usr/bin/julia
 include("../../utils.jl")
 
-input = partseToInt(readInput("input.txt"))
+input = partseToInt(readInput("input.txt"), r"\n|\r\n")
 print("The answer to part 1 is: ", count(x->x>0, diff(input)))
 
 sums = Vector{Int}()
