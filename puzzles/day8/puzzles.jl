@@ -1,7 +1,6 @@
 #!/usr/bin/julia
 include("../../utils.jl")
 
-
 input = partseToString(readInput("input.txt"))
 
 ### Part 1 ###
@@ -23,7 +22,6 @@ function similarity(pattern1, pattern2)
     end
     return nSimilar 
 end
-
 
 total = 0
 for line in input
@@ -49,4 +47,3 @@ end
 
 print("\nThe answer to part 1 is: ", count[2] + count[3] + count[4] + count[7])
 print("\nThe answer to part 2 is: ", total)
-
