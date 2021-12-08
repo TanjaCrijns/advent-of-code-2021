@@ -78,7 +78,6 @@ Your puzzle answer was ```554```.
 ____
 #### Part Two 
 
-</details>
 Through a little deduction, you should now be able to determine the remaining digits. Consider again the first example above:
 
 acedgfb cdfbe gcdfa fbcad dab cefabd cdfgeb eafb cagedb ab |
@@ -130,6 +129,8 @@ Adding all of the output values in this larger example produces 61229.
 For each entry, determine all of the wire/segment connections and decode the four-digit output values. What do you get if you add up all of the output values?
 
 Your puzzle answer was ```990964```.
+
+</details>
 
 <details>
   <summary>Comments about solution</summary>
