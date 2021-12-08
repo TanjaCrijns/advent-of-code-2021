@@ -14,7 +14,6 @@ for line in input
 end
 
 ### Part 2 ###
-
 function similarity(pattern1, pattern2)
     nSimilar = 0
     for letter in pattern1
