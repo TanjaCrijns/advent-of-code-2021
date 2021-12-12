@@ -1,14 +1,14 @@
 #!/usr/bin/julia
 include("../../utils.jl")
 
-function checkAdjacentLocations(x,y,heightMmap)
+function checkAdjacentLocations(x,y,heightMap)
     neighbors = [(-1,0), (0, -1), (1,0), (0,1)]
     higherNeighbors = 0
     for neighbor in neighbors
         if x + neighbor[1] < 1 || x + neighbor[1] > 100 || y + neighbor[2] < 1 || y + neighbor[2] > 100
             higherNeighbors += 1
         else
-            if heightMmap[x+neighbor[1], y+neighbor[2]] > heightMmap[x,y]
+            if heightMap[x+neighbor[1], y+neighbor[2]] > heightMap[x,y]
                 higherNeighbors += 1
             end
         end
@@ -16,7 +16,7 @@ function checkAdjacentLocations(x,y,heightMmap)
     return (higherNeighbors==4, heightMap[x,y]+1)
 end
 
-function getBasinSize(x,y,heightMmap)
+function getBasinSize(x,y,heightMap)
     toCheck = [(x,y)]
     found = []
     neighbors = [(-1,0), (0, -1), (1,0), (0,1)]
@@ -26,7 +26,7 @@ function getBasinSize(x,y,heightMmap)
             tempX, tempY = toCheck[1][1], toCheck[1][2]
             if tempX + neighbor[1] < 1 || tempX + neighbor[1] > 100 || tempY + neighbor[2] < 1 || tempY + neighbor[2] > 100
             else
-                if heightMmap[tempX+neighbor[1], tempY+neighbor[2]] != 9
+                if heightMap[tempX+neighbor[1], tempY+neighbor[2]] != 9
                     if (tempX+neighbor[1], tempY+neighbor[2]) ∉ found
                         push!(found, (tempX+neighbor[1], tempY+neighbor[2]))
                         push!(toCheck, (tempX+neighbor[1], tempY+neighbor[2]))
