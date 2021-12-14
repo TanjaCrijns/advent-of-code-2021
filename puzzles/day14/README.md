@@ -54,13 +54,20 @@ This polymer grows quickly. After step 5, it has length 97; After step 10, it ha
 
 Apply 10 steps of pair insertion to the polymer template and find the most and least common elements in the result. What do you get if you take the quantity of the most common element and subtract the quantity of the least common element?
 
-
+Your puzzle answer was ```2712```.
 ____
 #### Part Two 
+The resulting polymer isn't nearly strong enough to reinforce the submarine. You'll need to run more steps of the pair insertion process; a total of 40 steps should do it.
 
+In the above example, the most common element is B (occurring 2192039569602 times) and the least common element is H (occurring 3849876073 times); subtracting these produces 2188189693529.
+
+Apply 40 steps of pair insertion to the polymer template and find the most and least common elements in the result. What do you get if you take the quantity of the most common element and subtract the quantity of the least common element?
+
+Your puzzle answer was ```8336623059567```.
 </details>
 
 <details>
   <summary>Comments about solution</summary>
+  Started with a slow/inefficient solution, but then I got the tip from someone about my solution to the Lanternfish puzzle from day 6. I wrapped this day up with a similar solution. Got stuck at some point on a too high score that was hard to debug, turned out to be an issue of comparing a single letter string "x" to a char 'x' which is not the same in Julia.
   <br/>
 </details>
