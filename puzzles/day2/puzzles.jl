@@ -14,7 +14,7 @@ for step in input
     end
 end
 
-print("The answer to part 1 is: ", hor * depth)
+println("The answer to part 1 is: ", hor * depth)
 
 hor, depth, aim = 0, 0, 0
 for step in input
@@ -31,4 +31,4 @@ for step in input
     end
 end
 
-print("\nThe answer to part 2 is: ", hor * depth)
+println("The answer to part 2 is: ", hor * depth)

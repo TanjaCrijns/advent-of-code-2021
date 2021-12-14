@@ -40,5 +40,5 @@ for line in incompletedLines
     push!(completionScores, completionScore)
 end
 
-print("The answer to part 1 is: ", syntaxErrorCode, '\n')
-print("The answer to part 2 is: ", sort(completionScores)[Int(round(length(completionScores)/2))], '\n')
+println("The answer to part 1 is: ", syntaxErrorCode)
+println("The answer to part 2 is: ", sort(completionScores)[Int(round(length(completionScores)/2))])

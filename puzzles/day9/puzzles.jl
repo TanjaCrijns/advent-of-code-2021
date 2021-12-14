@@ -67,5 +67,5 @@ for lowPoint in lowPoints
     push!(basinSizes, getBasinSize(lowPoint[1], lowPoint[2], heightMap))
 end
 
-print("The answer to part 1 is: ", sum(risks), '\n')
-print("The answer to part 2 is: ", reduce(*, sort(basinSizes)[end-2:end]), '\n')
+println("The answer to part 1 is: ", sum(risks))
+println("The answer to part 2 is: ", reduce(*, sort(basinSizes)[end-2:end]))

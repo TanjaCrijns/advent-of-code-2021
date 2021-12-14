@@ -37,10 +37,10 @@ while !allFlashed
         toCheck = toCheck[2:end]
     end
     if steps == 100
-        print("The answer to part 1 is: ", nFlashed, '\n')
+        println("The answer to part 1 is: ", nFlashed)
     end
     if sum(octopuses) == 0
-        print("The answer to part 2 is: ", steps, '\n')
+        println("The answer to part 2 is: ", steps)
         global allFlashed = true
     end
 end

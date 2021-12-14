@@ -53,5 +53,5 @@ for (index, vent) in enumerate(input)
     x2, y2 = map(x -> parse(Int, x), split(secondCoord, ','))
     push!(coords, (x1, y1, x2, y2))
 end
-print("The answer to part 1 is: ", fillVentDiagram(coords, false))
-print("\nThe answer to part 2 is: ", fillVentDiagram(coords, true))
+println("The answer to part 1 is: ", fillVentDiagram(coords, false))
+println("The answer to part 2 is: ", fillVentDiagram(coords, true))

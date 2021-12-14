@@ -23,5 +23,5 @@ for pos in 0:length(input)-1
 end
 
 
-print("The answer to part 1 is: ", leastConstant)
-print("\nThe answer to part 2 is: ", leastIncrease)
+println("The answer to part 1 is: ", leastConstant)
+println("The answer to part 2 is: ", leastIncrease)

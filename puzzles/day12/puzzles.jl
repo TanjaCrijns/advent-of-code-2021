@@ -44,7 +44,7 @@ while length(currentRoutes) > 0
 end
 
 
-print("The answer to part 1 is: ", length(endRoutes), '\n')
+println("The answer to part 1 is: ", length(endRoutes))
 
 ### Part 2 ###
 
@@ -78,4 +78,4 @@ while length(currentRoutes) > 0
     global currentRoutes = currentRoutes[2:end]
 end
 
-print("The answer to part 2 is: ", length(endRoutes), '\n')
+println("The answer to part 2 is: ", length(endRoutes))

@@ -26,5 +26,5 @@ for fish in input
     fishCounts[fish] += 1
 end
 
-print("The answer to part 1 is: ", fishReproduce(fishCounts, 80))
-print("\nThe answer to part 2 is: ", fishReproduce(fishCounts, 256))
+println("The answer to part 1 is: ", fishReproduce(fishCounts, 80))
+println("The answer to part 2 is: ", fishReproduce(fishCounts, 256))

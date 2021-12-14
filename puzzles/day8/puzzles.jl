@@ -45,5 +45,5 @@ for line in input
     global total += parse(Int, tempTotal)
 end
 
-print("\nThe answer to part 1 is: ", count[2] + count[3] + count[4] + count[7])
-print("\nThe answer to part 2 is: ", total)
+println("The answer to part 1 is: ", count[2] + count[3] + count[4] + count[7])
+println("The answer to part 2 is: ", total)

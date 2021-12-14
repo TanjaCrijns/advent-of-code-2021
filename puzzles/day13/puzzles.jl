@@ -53,11 +53,11 @@ for (i, rule) in enumerate(rules)
         global maxX = foldLine - 1
     end
     if i == 1
-        print("The answer to part 1 is: ", length(endCoords), '\n')
+        println("The answer to part 1 is: ", length(endCoords))
     end
 end
 
-print("The answer to part 2 is: ", "", '\n')
+println("The answer to part 2 is: ")
 paper = fill('.', maxX, maxY)
 for coord in endCoords
     paper[coord[1],coord[2]] = '#'

@@ -17,7 +17,7 @@ for i in 1:length(input[1])
     end
 end
 
-print("The answer to part 1 is: ", parse(Int, gamma; base=2) * parse(Int, epsilon; base=2))
+println("The answer to part 1 is: ", parse(Int, gamma; base=2) * parse(Int, epsilon; base=2))
 
 oxygenGenerator, co2Scrubber= "", ""
 oxyReport, co2Report = deepcopy(report), deepcopy(report)
@@ -66,4 +66,4 @@ for i in 1:length(input[1])
     global co2Temp = []
 end
 
-print("\nThe answer to part 2 is: ", parse(Int, oxygenGenerator; base=2) * parse(Int, co2Scrubber; base=2))
+println("The answer to part 2 is: ", parse(Int, oxygenGenerator; base=2) * parse(Int, co2Scrubber; base=2))

@@ -57,5 +57,5 @@ function playGame()
 end
 
 winningIndicesOrder, firstWinningScores = playGame()
-print("The answer to part 1 is: ", firstWinningScores[winningIndicesOrder[1]])
-print("\nThe answer to part 2 is: ", firstWinningScores[winningIndicesOrder[end]])
+println("The answer to part 1 is: ", firstWinningScores[winningIndicesOrder[1]])
+println("The answer to part 2 is: ", firstWinningScores[winningIndicesOrder[end]])
