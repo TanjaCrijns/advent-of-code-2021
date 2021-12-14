@@ -127,8 +127,3 @@ What code do you use to activate the infrared thermal imaging camera system?
 
 Your puzzle answer was ```EFJKZLBL```.
 </details>
-
-<details>
-  <summary>Comments about solution</summary>
-  <br/>
-</details>
