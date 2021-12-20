@@ -109,13 +109,22 @@ Truly incredible - now the small details are really starting to come through. Af
 
 Start with the original input image and apply the image enhancement algorithm twice, being careful to account for the infinite size of the images. How many pixels are lit in the resulting image?
 
+Your puzzle answer was ```5573```.
 ____
 #### Part Two 
+
+You still can't quite make out the details in the image. Maybe you just didn't enhance it enough.
+
+If you enhance the starting input image in the above example a total of 50 times, 3351 pixels are lit in the final output image.
+
+Start again with the original input image and apply the image enhancement algorithm 50 times. How many pixels are lit in the resulting image?
+
+Your puzzle answer was ```20097```.
 
 </details>
 
 <details>
   <summary>Comments about solution</summary>
-
+  I accidentally found the answer to puzzle 1, I got 5537 from my code but entered 5573 by accident which was the right answer. Took me a while to figure out why my solution was working perfectly for the example but not for my own input, with help and tips from a friend I managed to make the changed that were needed; the 'endless' dots shouldn't always be 'endless' dots, but with your own input they change to '#' and back again. So I had to switch up what I did when I encountered a border pixel.
   <br/>
 </details>
